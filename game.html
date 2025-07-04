@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style2.css" />
+  <title>Rock Paper Scissors</title>
+</head>
+<body>
+<div class="home">
+<button id="home"><a href="index.html"><i class="glyphicon glyphicon-home"></i> </a> </button>
+  </div>
+<h1>Quartz-Parchment-Shears</h1>
+
+<div id="gameOverScreen">
+  <div class="game-over-content">
+    <h1> GAME OVER</h1>
+    <p id="resultMessage"> </p>
+    <button onclick="restartGame()"> Play Again</button>
+  </div>
+</div>
+
+<div class="mode-buttons">
+  <button onclick="setMode(1)">Best of 1</button>
+  <button onclick="setMode(3)">Best of 3</button>
+  <button onclick="setMode(5)">Best of 5</button>
+</div>
+
+<div class="choices">
+  <div class="choice" onclick="play('rock')">Rock</div>
+  <div class="choice" onclick="play('paper')">Paper</div>
+  <div class="choice" onclick="play('scissors')">Scissors</div>
+</div>
+
+<div class="showdown" id="showdown">
+  <span id="playerIcon" class="hand"></span>
+  <span>VS</span>
+  <span id="computerIcon" class="hand"></span>
+</div>
+
+<div class="result" id="result">Are you ready!</div>
+<div class="scoreboard" id="scoreboard"><b>Mordecai: 0 | Rigby: 0</b></div>
+
+<script src="function2.js"></script>
+
+</body>
+</html>
